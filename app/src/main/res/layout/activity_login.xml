@@ -105,6 +105,7 @@
                 android:text="REGISTER"
                 android:backgroundTint="#1A535C"/>
 
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

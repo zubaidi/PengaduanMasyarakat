@@ -1,7 +1,9 @@
 package com.example.pengaduanmasyarakat
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 
 class RegisActivity : AppCompatActivity() {
@@ -10,5 +12,11 @@ class RegisActivity : AppCompatActivity() {
         setContentView(R.layout.activity_regis)
     }
 
-    fun setLogin(view: View) {}
+
+    fun setLogin(view: View) {
+
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+
+    }
 }

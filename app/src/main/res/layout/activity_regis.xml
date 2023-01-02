@@ -31,7 +31,7 @@
             android:id="@+id/imageView"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="40dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/icon"
             />
@@ -42,113 +42,104 @@
                 android:layout_margin="20dp"
                 android:elevation="10dp"
                 app:cardBackgroundColor="#FF6B6B"
-                app:cardCornerRadius="20dp"
-
-
-
-                >
+                app:cardCornerRadius="20dp">
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Registrasi Aplikasi"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="30dp"
                     android:textSize="20dp"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:fontFamily="@font/roboto"
-
-
-
-                    />
+                    android:fontFamily="@font/roboto"/>
 
                 <EditText
                     android:id="@+id/NIK"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_height="48dp"
                     android:layout_marginLeft="30dp"
-                    android:padding="10dp"
-                    android:hint="NIK"
-                    android:minHeight="48dp"
-                    android:textColorHint="#8A8A8A"
-                    android:textSize="18dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="30dp"
                     android:background="#ffffff"
-                    />
+                    android:hint="NIK"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColorHint="#757575"
+                    android:textSize="14dp" />
 
                 <EditText
                     android:id="@+id/Name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="120dp"
+                    android:layout_marginTop="130dp"
                     android:layout_marginRight="30dp"
                     android:background="#ffffff"
                     android:hint="Nama Lengkap"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
                     android:padding="10dp"
-                    android:textColorHint="#8A8A8A"
-                    android:textSize="18dp" />
+                    android:textColorHint="#757575"
+                    android:textSize="14dp" />
 
                 <EditText
                     android:id="@+id/ID"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="190dp"
+                    android:layout_marginTop="180dp"
                     android:layout_marginRight="30dp"
                     android:background="#ffffff"
                     android:hint="ID Baru"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
                     android:padding="10dp"
-                    android:textColorHint="#8A8A8A"
-                    android:textSize="18dp" />
+                    android:textColorHint="#757575"
+                    android:textSize="14dp" />
 
                 <EditText
                     android:id="@+id/Pass"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="260dp"
+                    android:layout_marginTop="230dp"
                     android:layout_marginRight="30dp"
                     android:background="#ffffff"
                     android:hint="********"
                     android:inputType="textPassword"
                     android:minHeight="48dp"
                     android:padding="10dp"
-                    android:textColorHint="#8A8A8A"
-                    android:textSize="18dp" />
+                    android:textColorHint="#757575"
+                    android:textSize="14dp" />
 
                 <EditText
                     android:id="@+id/Telp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="330dp"
+                    android:layout_marginTop="280dp"
                     android:layout_marginRight="30dp"
                     android:background="#ffffff"
                     android:hint="Masukkan No. Telp."
                     android:inputType="number"
                     android:minHeight="48dp"
                     android:padding="10dp"
-                    android:textColorHint="#8A8A8A"
-                    android:textSize="18dp" />
+                    android:textColorHint="#757575"
+                    android:textSize="14dp" />
 
                 <Button
                     android:id="@+id/button"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="50dp"
                     android:text="REGISTRASI"
-                    android:layout_marginTop="400dp"
+                    android:layout_marginTop="340dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:background="#1A535C"
-
+                    android:onClick="setLogin"
                     />
 
                 <LinearLayout
@@ -156,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="470dp"
+                    android:layout_marginTop="400dp"
                     android:layout_marginRight="30dp">
 
                     <TextView
@@ -165,16 +156,17 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Sudah Punya Akun?"
+
                         />
 
                     <TextView
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:text="Masuk Disini"
+                        android:text="@string/register"
+                        android:textSize="14dp"
                         android:textColor="#FFE66D"
                         android:onClick="setLogin"
-                        />
-
+                        android:clickable="true"/>
 
                 </LinearLayout>
 
